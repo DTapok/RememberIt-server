@@ -1,0 +1,5 @@
+{
+    "serverPort": 5000,
+    "dbUrl": "mongodb+srv://reikan69:RhGq1d9em1dAAlgb@rememderit.q5c2cxw.mongodb.net/?retryWrites=true&w=majority",
+    "secretKey": "RememberIt-sercet-key"
+}
