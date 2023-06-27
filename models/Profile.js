@@ -1,6 +1,7 @@
-const { Schema, model } = require("mongoose")
+const { Schema, model, ObjectId } = require("mongoose")
 
 const Profile = new Schema({
+    user: { type: ObjectId, ref: "User" },
     first_name: { type: String },
     last_name: { type: String },
     avatar: { type: String },

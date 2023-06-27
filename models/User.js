@@ -5,7 +5,9 @@ const User = new Schema({
     password: { type: String, required: true },
     username: { type: String, required: true, unique: true },
     role: { type: ObjectId, ref: "Role", default: { _id: "647e4c04864add7ed4414213" } },
-    profile: { type: ObjectId, ref: "Profile" }
+    profile: { type: ObjectId, ref: "Profile" },
+    setCards: [{ type: ObjectId, ref: "SetCards" }],
+    savedSets: [{ type: ObjectId, ref: "SavedSets" }]
 })
 
 module.exports = model("User", User)
